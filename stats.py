@@ -1,6 +1,6 @@
 def num_words(text):
     words = text.split()
-    print(f"{len(words)} words found in the document")
+    print(f"Found {len(words)} total words")
     print("--------- Character Count -------")
 
 def sort_on(items):
