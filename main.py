@@ -4,8 +4,13 @@ from stats import char_frequency
 from stats import sort_on
 
 
-book_path = "books/frankenstein.txt"
+import sys
 
+if len(sys.argv) == 2:
+    book_path = sys.argv[1]
+else:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
 
 #Read book from path and convert to string
 def get_book_text(book):
